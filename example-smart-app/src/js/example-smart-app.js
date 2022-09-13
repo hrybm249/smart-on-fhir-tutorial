@@ -31,9 +31,9 @@
           var fname = '';
           var lname = '';
 
-          if (typeof pt.name[0] !== 'undefined') {
-            fname = pt.name[0].given.join(' ');
-            lname = pt.name[0].family.join(' ');
+          if (typeof patient.name[0] !== 'undefined') {
+            fname = patient.name[0].given.join(' ');
+            lname = patient.name[0].family;
           }
 
           var height = byCodes('8302-2');
