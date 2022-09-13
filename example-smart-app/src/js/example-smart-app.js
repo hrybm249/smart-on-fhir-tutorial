@@ -70,7 +70,8 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           p.temperature = getQuantityValueAndUnit(temperature[0]);
-         allergies.forEach(function(allergy) {
+          p.allergies = "";
+          allergies.forEach(function(allergy) {
             if (typeof(allergy.code) === "object") {
               p.allergies += "<div>" + allergy.code.text + "</div>";
          }
